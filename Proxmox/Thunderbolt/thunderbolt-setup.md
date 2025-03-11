@@ -1,6 +1,8 @@
 # Thunderbolt Setup
 
-I'm only using ipv6 in this setup, but you could also add ipv4 if you want to.
+**Do all steps on each node.**
+
+Note: I'm only using ipv6 in this setup, but you could also add ipv4 if you want to.
 
 ## Kernel modules
 
@@ -113,3 +115,7 @@ Here's my line `GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt"`
 If you get this wrong, your system might not boot. So be careful. Do this at your own risk!
 
 I had to do this to get proper performance.
+
+# Next step
+
+[OpenFabric routing](openfabric-routing.md)
