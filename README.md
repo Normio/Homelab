@@ -6,6 +6,6 @@ Welcome to my homelab setup! This repository contains all the configurations, sc
 
 ### Proxmox
 
-- [Helper scripts](Proxmox\scripts\README.md)
+- [Helper scripts](Proxmox/scripts/README.md)
 
-- [Thunderbolt mesh network setup](Proxmox\Thunderbolt\README.md)
+- [Thunderbolt mesh network setup](Proxmox/Thunderbolt/README.md)
