@@ -1,6 +1,6 @@
 # Thunderbolt networking
 
-## Notes
+## Note
 
 These configs are verified to work for Minisforum MS-01 units.
 

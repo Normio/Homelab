@@ -109,15 +109,3 @@ Vertex               Type         Metric Next-Hop             Interface Parent
 
 You should now be able to ping other nodes via thunderbolt mesh network.
 Try `ping fc00::82` or `ping fc00::83` from your node.
-
-
-
-
-
-
-
-
-
-
-
-
