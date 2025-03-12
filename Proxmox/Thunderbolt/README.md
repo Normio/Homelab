@@ -1,5 +1,9 @@
 # Thunderbolt networking
 
+## Notes
+
+These configs are verified to work for Minisforum MS-01 units.
+
 ## Overview
 
 The mesh network is being set up using Thunderbolt technology to interconnect three MS-01 nodes. This document outlines the necessary steps to configure a basic mesh network using Thunderbolt interfaces. The goal is to create a redundant and high-speed interconnection between nodes, enhancing both performance and reliability.

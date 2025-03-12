@@ -2,6 +2,8 @@
 
 **Do all steps on each node.**
 
+These configs are verified to work for Minisforum MS-01 units.
+
 Note: I'm only using ipv6 in this setup, but you could also add ipv4 if you want to.
 
 ## Kernel modules
@@ -116,6 +118,6 @@ If you get this wrong, your system might not boot. So be careful. Do this at you
 
 I had to do this to get proper performance.
 
-# Next step
+## Next step
 
 [OpenFabric routing](openfabric-routing.md)
