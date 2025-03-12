@@ -81,7 +81,7 @@ Restart network services with `systemctl restart networking`
 7. (Optional) check current config again with `show running-config` to make sure everything is correct. If you see any errors, you can edit `/etc/frr/frr.conf` directly and restart frr service.
 8. Exit the CLI with `exit`
 
-Once you have done steps 1 to 9 on each node you can check connectivity between nodes using:
+Once you have done steps 1 to 8 on each node you can check connectivity between nodes using:
 `vtysh -c "show openfabric topology"`
 
 You should see something like this:
