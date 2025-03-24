@@ -7,7 +7,7 @@ These are scripts which allows you to perform task more easily on Proxmox VE
 Run the following command on `Proxmox PV Shell`
 
 ```sh
-bash -c "$(wget -qLO - https://github.com/Normio/Homelab/raw/main/Proxmox/<name of the script>.sh)"
+bash -c "$(wget -qLO - https://github.com/Normio/Homelab/raw/main/Proxmox/scripts/<name of the script>.sh)"
 ```
 
 Change the name according to the script you want to run
@@ -25,7 +25,7 @@ Change the name according to the script you want to run
 - Reboot `Proxmox VE`
 
 ```sh
-bash -c "$(wget -qLO - https://github.com/Normio/Homelab/raw/main/Proxmox/post-pve-install.sh)"
+bash -c "$(wget -qLO - https://github.com/Normio/Homelab/raw/main/Proxmox/scripts/post-pve-install.sh)"
 ```
 
 ## Post PBS install (name: post-pbs-install)
@@ -39,5 +39,5 @@ bash -c "$(wget -qLO - https://github.com/Normio/Homelab/raw/main/Proxmox/post-p
 - Reboot `Proxmox Backup Server`
 
 ```sh
-bash -c "$(wget -qLO - https://github.com/Normio/Homelab/raw/main/Proxmox/post-pbs-install.sh)"
+bash -c "$(wget -qLO - https://github.com/Normio/Homelab/raw/main/Proxmox/scripts/post-pbs-install.sh)"
 ```
