@@ -27,3 +27,17 @@ Change the name according to the script you want to run
 ```sh
 bash -c "$(wget -qLO - https://github.com/Normio/Homelab/raw/main/Proxmox/post-pve-install.sh)"
 ```
+
+## Post PBS install (name: post-pbs-install)
+
+- Updates sources
+- Disables `enterprise` repository
+- Enables `no-subscription` repository
+- Add `pvetest` repository (set it disabled)
+- Disable subscription nag
+- Update `Proxmox Backup Server`
+- Reboot `Proxmox Backup Server`
+
+```sh
+bash -c "$(wget -qLO - https://github.com/Normio/Homelab/raw/main/Proxmox/post-pbs-install.sh)"
+```
