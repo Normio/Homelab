@@ -4,7 +4,7 @@
 
 Choose one of the factors below
 
-Factors      	       	                         | Description                                                                                      | Command
+Factors                                          | Description                                                                                      | Command
 ------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------
 No PIN or touch are required                     | You will not be required to enter your FIDO2 PIN or touch your YubiKey each time to authenticate | `ssh-keygen -t ed25519-sk -O resident -O no-touch-required`
 PIN but no touch required                        | Entering the PIN will be required but touching the physical key will not                         | `ssh-keygen -t ed25519-sk -O resident -O verify-required -O no-touch-required`
@@ -37,6 +37,7 @@ Host <connection-name> wombat-1.sleepingwombat.com
     IdentityFile ~/.ssh/<private-key>
     IdentityFile ~/.ssh/<another-private-key>
     User <username>
+    IdentityOnly yes
 ```
 
 Example
@@ -47,6 +48,7 @@ Host wombat-1 wombat-1.sleepingwombat.com
     IdentityFile ~/.ssh/id_ed25519_sk_rk_hetzner_yubikey_5_nfc
     IdentityFile ~/.ssh/id_ed25519_sk_rk_hetzner_yubikey_5c_nfc
     User wombat
+    IdentityOnly yes
 ```
 
 ## Use key on Putty CAC
