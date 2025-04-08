@@ -27,7 +27,7 @@ The script sets the following SSH daemon settings:
 | `AllowTcpForwarding`              | `no`                   | Disables TCP port forwarding                                  |
 | `X11Forwarding`                   | `no`                   | Disables X11 (GUI) forwarding                                 |
 | `AllowAgentForwarding`            | `no`                   | Disables SSH agent forwarding                                 |
-| `UsePAM`                          | `no`                   | Disables PAM (Pluggable Authentication Modules)               |
+| `UsePAM`                          | `no`                   | Disables PAM (Pluggable Authentication Modules) **NOTE:** if Yubikey promt is not raised during the authentication try to set this to `yes` |
 | `AuthenticationMethods`           | `publickey`            | Enforces public key-only authentication                       |
 | `AuthorizedKeysFile`              | `.ssh/authorized_keys` | Sets path to authorized public keys file                      |
 
