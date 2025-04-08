@@ -1,5 +1,8 @@
 # SSH Server Hardening Script
 
+> [!NOTE]
+> Link to the script [harden_ssh.sh](harden_ssh.sh)
+
 This script is designed to **harden the SSH configuration** on a Linux server by enforcing secure settings and disabling insecure authentication methods. It ensures consistent configuration by modifying or appending specific directives in `/etc/ssh/sshd_config`, and restarting the SSH service to apply changes.
 
 You could also set these up using cloud-init, Ansible or some other method.
