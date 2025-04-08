@@ -13,3 +13,7 @@ Welcome to my homelab setup! This repository contains all the configurations, sc
 ### Bash scripts
 
 - [Bash scripts](bash_scripts/README.md)
+
+### Commands
+
+- [Commands](commands/README.md)

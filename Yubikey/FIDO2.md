@@ -51,6 +51,8 @@ Host wombat-1 wombat-1.sleepingwombat.com
     IdentityOnly yes
 ```
 
+> Note: the order of `IdentityFile` defines the order of Yubikeys used to login. The order is from top to bottom.
+
 ## Use key on Putty CAC
 
 First import keys by going to `Connection` -> `SSH` -> `Certificate` -> `FIDO Tools` -> `Import keys`
