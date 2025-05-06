@@ -7,6 +7,7 @@ Tested on Ubuntu.
 ## Prerequisites
 
 - Ubuntu with GNOME desktop installed
+- `usbip` installed on Ubuntu (see [Install usbip](../usbip/README.md))
 - YubiKey attached on remote machine using `usbip`
 - Remote login enabled on Ubuntu
 - Login user with home directory (we'll use wombat as example)
