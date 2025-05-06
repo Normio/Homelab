@@ -10,6 +10,10 @@ Welcome to my homelab setup! This repository contains all the configurations, sc
 
 - [Thunderbolt mesh network setup](proxmox/thunderbolt/README.md)
 
+### Ubuntu
+
+- [Automatically attach / detach remote Yubikey on RDP connection](ubuntu/attach-detach-yubikey/README.md)
+
 ### Bash scripts
 
 - [Bash scripts](bash_scripts/README.md)
