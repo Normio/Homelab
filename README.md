@@ -10,6 +10,10 @@ Welcome to my homelab setup! This repository contains all the configurations, sc
 
 - [Thunderbolt mesh network setup](proxmox/thunderbolt/README.md)
 
+### Proxmox Backup Server (PBS)
+
+- [TrueNAS NFS share as a datastore](proxmox/proxmox-backup-server/README.md)
+
 ### Ubuntu
 
 - [Automatically attach / detach remote Yubikey on RDP connection](ubuntu/attach-detach-yubikey/README.md)
