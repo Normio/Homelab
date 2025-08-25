@@ -77,7 +77,7 @@
    * Use the [Proxmox Backup Server Prune Simulator](https://pbs.proxmox.com/docs/prune-simulator/) to test different retention policies.
 
 10. Add **Permissions**
-    * Select newly created **Datastore -> Permissions -> Add**
+    * Select newly created **Datastore → Permissions → Add**
     * Add roles `DatastoreAudit` and `DatastorePowerUser` for the user created above (`backup`)
 
 ## 3. Configure Proxmox VE
