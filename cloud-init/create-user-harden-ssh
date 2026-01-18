@@ -1,0 +1,39 @@
+#cloud-config
+
+# Create user with sudo privileges
+users:
+  - name: {your-username-here}
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    lock_passwd: false
+    passwd: $6$rounds=4096$yoursalt$yourhash...
+    ssh_authorized_keys:
+      - ssh-rsa AAAA... public key here
+      - ssh-rsa AAAA... another public key here
+
+# Harden SSH configuration
+write_files:
+  - path: /etc/ssh/sshd_config.d/99-hardening.conf
+    content: |
+      PermitRootLogin no
+      PubkeyAuthentication yes
+      PasswordAuthentication no
+      KbdInteractiveAuthentication no
+      ChallengeResponseAuthentication no
+      MaxAuthTries 2
+      LoginGraceTime 20s
+      AllowTcpForwarding no
+      X11Forwarding no
+      AllowAgentForwarding no
+      UsePAM no
+      AuthenticationMethods publickey
+      AuthorizedKeysFile .ssh/authorized_keys
+      AllowUsers wombat
+    owner: root:root
+    permissions: '0644'
+
+# Enable and restart SSH
+runcmd:
+  - systemctl enable ssh
+  - systemctl restart ssh
